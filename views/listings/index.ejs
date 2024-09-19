@@ -13,8 +13,8 @@
           <div class="card-img-overelay"> abcd</div>
           <div class="card-body">
              <p class="card-text">
-                <b> <%= listing.title %> </b>  <br>
-                 &#8377;<%= listing.price.toLocaleString("en-IN")  %>/night
+              <b> <%= listing.title %> </b>  <br>
+              &#8377;<%= listing.price ? listing.price.toLocaleString("en-IN") : "N/A" %>/night
             </p>
           </div>
         </div>
